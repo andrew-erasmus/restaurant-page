@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Parkinsans;
+}
+
+body{
+    background-color: #F8D9D6;
+    background-image: url('/src/background-texture.svg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    background-color:#42929D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
+nav{
+    font-size: 1.4rem;
+    padding:10px;   
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 150px;
+    text-align: center;
+    color: #F8D9D6;
+   
+}
+
+nav:hover{
+    background-color: #84c3c8;
+    border: solid #F8D9D6 2px;
+    transform: scale(1.08);
+    transition: 0.5s ease;
+}
