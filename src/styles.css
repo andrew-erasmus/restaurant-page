@@ -12,6 +12,9 @@ body{
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header{
@@ -24,19 +27,26 @@ header{
     width: 100%;
     z-index: 2;
     padding-right: 10px;
+    gap: 50px;
 }
+
+
 
 svg{
     display: none;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
 }
 
 nav{
     font-size: 1.4rem;
     padding:10px;   
     border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 150px;
     text-align: center;
     color: #F8D9D6;
     display: flex;
@@ -60,9 +70,6 @@ h1{
 }
 
 h1#heading{
-    margin-left: 20px;
-    /* margin-right: auto; */
-    /* display: block; */
     flex-shrink: 0;
 }
 
@@ -72,7 +79,6 @@ h1#heading{
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
 }
 
 #greeting-container{
@@ -103,7 +109,7 @@ h1#heading{
 }
 footer{
     background-color: #F4F4E1;
-    height: 60px;
+    min-height: 60px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -136,4 +142,20 @@ a{
 #intro-body-container{
     display: flex;
     flex-direction: column;
+}
+
+
+/* Mobile responsive scaling */
+@media only screen and (max-width: 768px) {
+    h1#heading{
+        display: none;
+    }
+
+    svg{
+        display: block;
+    }
+
+    #home-nav, #menu-nav, #about-nav, #contact-nav{
+        display: none;
+    }
 }
