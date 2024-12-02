@@ -6,6 +6,8 @@
     font-family: Parkinsans;
 }
 
+/* Home page and general styling */
+
 body{
     background-color: #F8D9D6;
     background-image: url('/src/background-texture.svg');
@@ -127,6 +129,10 @@ a{
     color: black;
 }
 
+a:hover {
+    text-decoration: underline 2px;
+}
+
 
 #intro{
     width: 70%;
@@ -144,11 +150,13 @@ a{
     width: 200px;
     align-self: center;
 }
+
 #intro-body-container{
     display: flex;
     flex-direction: column;
 }
 
+/* Menu Page Styling */
 #menu-grid{
     display: grid;
     height: 100%;
@@ -182,8 +190,26 @@ h3{
     object-fit: cover; 
 }
 
+/* About Page Styling */
 iframe{
     margin: 20px;
+    max-width: 90%;
+}
+
+/* Contact Page Styling */
+.contact-details{
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+li > a{
+    display: inline;
+}
+
+
+.easter-egg{
+    margin-top: 20px;
 }
 
 /* Mobile responsive scaling */
