@@ -81,9 +81,8 @@ h1#heading{
     justify-content: space-between;
 }
 
-#greeting-container{
-    padding-top:50px;
-    padding-bottom:50px;
+.dark-container{
+    padding:50px;    
     height: fit-content;
     width: 80%;
     margin-top: 60px;
@@ -144,11 +143,37 @@ a{
     flex-direction: column;
 }
 
+#menu-grid{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    gap: 50px 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
+    align-items: center;
+}
+
+.menu-item{
+    border: solid #42929D 5px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: #84c3c8;
+}
+
+h3{
+    color: white;
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+}
 
 /* Mobile responsive scaling */
 @media only screen and (max-width: 768px) {
     h1#heading{
-        display: none;
+        font-size: 25px;
     }
 
     svg{
