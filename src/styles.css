@@ -11,6 +11,7 @@ body{
     background-image: url('/src/background-texture.svg');
     background-size: cover;
     background-attachment: fixed;
+    height: 100vh;
 }
 
 header{
@@ -19,7 +20,14 @@ header{
     align-items: center;
     justify-content: center;
     height: 5rem;
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding-right: 10px;
+}
+
+svg{
+    display: none;
 }
 
 nav{
@@ -31,8 +39,11 @@ nav{
     width: 150px;
     text-align: center;
     color: #F8D9D6;
-    flex-shrink: 1;
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
 }
 
 nav:hover{
@@ -50,17 +61,18 @@ h1{
 
 h1#heading{
     margin-left: 20px;
-    margin-right: auto;
-    display: block;
+    /* margin-right: auto; */
+    /* display: block; */
     flex-shrink: 0;
 }
 
 #content{
-    height: 100vh;
+    padding-top: 5rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    height: 100vh;
 }
 
 #greeting-container{
@@ -92,7 +104,7 @@ h1#heading{
 footer{
     background-color: #F4F4E1;
     height: 60px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
