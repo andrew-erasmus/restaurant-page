@@ -217,12 +217,12 @@ li > a{
     h1#heading{
         font-size: 25px;
     }
-
-    svg{
-        display: block;
-    }
-
-    #home-nav, #menu-nav, #about-nav, #contact-nav{
+    
+    nav{
         display: none;
+    }
+    
+    svg{
+            display: block;
     }
 }
